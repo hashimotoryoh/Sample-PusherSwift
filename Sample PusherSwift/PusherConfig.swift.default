@@ -1,0 +1,12 @@
+//
+//  PusherConfig.swift
+//  Sample PusherSwift
+//
+//  Created by winas_user on 2017/08/08.
+//  Copyright © 2017年 Ryoh Hashimoto. All rights reserved.
+//
+
+let PUSHER_APP_ID  = ""
+let PUSHER_KEY     = ""
+let PUSHER_SECRET  = ""
+let PUSHER_CLUSTER = ""

@@ -7,19 +7,38 @@
 //
 
 import UIKit
+import PusherSwift
+import Toast_Swift
 
 class ViewController: UIViewController {
+    
+    let pusher = Pusher(key: PUSHER_KEY, options: PusherClientOptions(host: .cluster(PUSHER_CLUSTER)))
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let channelName = "sample-channel"
+        let eventName   = "sample-event"
+        
+        let channel = self.pusher.subscribe(channelName: channelName)
+        channel.bind(eventName: eventName, callback: { (data: Any?) in
+            guard let json = data as? [String:Any?] else {
+                print("取得したデータが解析不能")
+                abort()
+            }
+            
+            guard let message = json["message"] as? String else {
+                print("取得したデータに\"message\"キーが無い")
+                return
+            }
+            
+            self.view.makeToast(message)
+        })
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        self.pusher.connect()
     }
-
 
 }
-

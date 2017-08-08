@@ -12,6 +12,7 @@
 		8FBF7A831F394B2000E51E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7A811F394B2000E51E0B /* Main.storyboard */; };
 		8FBF7A851F394B2000E51E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7A841F394B2000E51E0B /* Assets.xcassets */; };
 		8FBF7A881F394B2000E51E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7A861F394B2000E51E0B /* LaunchScreen.storyboard */; };
+		8FBF7A901F39519000E51E0B /* PusherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF7A8F1F39519000E51E0B /* PusherConfig.swift */; };
 		90A1BB85798A7B040C288CE5 /* Pods_Sample_PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B862100FD1F6E87C085B314 /* Pods_Sample_PusherSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		8FBF7A841F394B2000E51E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBF7A871F394B2000E51E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FBF7A891F394B2000E51E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBF7A8F1F39519000E51E0B /* PusherConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusherConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				8FBF7A7D1F394B1F00E51E0B /* AppDelegate.swift */,
 				8FBF7A7F1F394B1F00E51E0B /* ViewController.swift */,
+				8FBF7A8F1F39519000E51E0B /* PusherConfig.swift */,
 				8FBF7A811F394B2000E51E0B /* Main.storyboard */,
 				8FBF7A841F394B2000E51E0B /* Assets.xcassets */,
 				8FBF7A861F394B2000E51E0B /* LaunchScreen.storyboard */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBF7A901F39519000E51E0B /* PusherConfig.swift in Sources */,
 				8FBF7A801F394B1F00E51E0B /* ViewController.swift in Sources */,
 				8FBF7A7E1F394B1F00E51E0B /* AppDelegate.swift in Sources */,
 			);
@@ -389,6 +393,7 @@
 				8FBF7A8E1F394B2000E51E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
