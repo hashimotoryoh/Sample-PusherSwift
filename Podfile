@@ -7,5 +7,6 @@ target 'Sample PusherSwift' do
 
   # Pods for Sample PusherSwift
   pod 'PusherSwift'
+  pod 'Toast-Swift'
 
 end
