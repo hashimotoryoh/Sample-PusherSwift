@@ -12,9 +12,13 @@
 		8FBF7A831F394B2000E51E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7A811F394B2000E51E0B /* Main.storyboard */; };
 		8FBF7A851F394B2000E51E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7A841F394B2000E51E0B /* Assets.xcassets */; };
 		8FBF7A881F394B2000E51E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF7A861F394B2000E51E0B /* LaunchScreen.storyboard */; };
+		90A1BB85798A7B040C288CE5 /* Pods_Sample_PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B862100FD1F6E87C085B314 /* Pods_Sample_PusherSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B8DFE7086D86D16EE1CC280 /* Pods-Sample PusherSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample PusherSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample PusherSwift/Pods-Sample PusherSwift.release.xcconfig"; sourceTree = "<group>"; };
+		2CB83811A82D59EDBE7F6FF1 /* Pods-Sample PusherSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample PusherSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample PusherSwift/Pods-Sample PusherSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5B862100FD1F6E87C085B314 /* Pods_Sample_PusherSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_PusherSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF7A7A1F394B1F00E51E0B /* Sample PusherSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample PusherSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF7A7D1F394B1F00E51E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FBF7A7F1F394B1F00E51E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A1BB85798A7B040C288CE5 /* Pods_Sample_PusherSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				8FBF7A7C1F394B1F00E51E0B /* Sample PusherSwift */,
 				8FBF7A7B1F394B1F00E51E0B /* Products */,
+				BBD4924B39285C796587C1E3 /* Pods */,
+				F76C44272E7424D65C8ED3D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "Sample PusherSwift";
 			sourceTree = "<group>";
 		};
+		BBD4924B39285C796587C1E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CB83811A82D59EDBE7F6FF1 /* Pods-Sample PusherSwift.debug.xcconfig */,
+				1B8DFE7086D86D16EE1CC280 /* Pods-Sample PusherSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F76C44272E7424D65C8ED3D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B862100FD1F6E87C085B314 /* Pods_Sample_PusherSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FBF7A8C1F394B2000E51E0B /* Build configuration list for PBXNativeTarget "Sample PusherSwift" */;
 			buildPhases = (
+				047EF37C8A9D98B67881E9A3 /* [CP] Check Pods Manifest.lock */,
 				8FBF7A761F394B1F00E51E0B /* Sources */,
 				8FBF7A771F394B1F00E51E0B /* Frameworks */,
 				8FBF7A781F394B1F00E51E0B /* Resources */,
+				F2613C01335C4DD16180EFD8 /* [CP] Embed Pods Frameworks */,
+				CB26CB6614A8B49E1B684746 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047EF37C8A9D98B67881E9A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sample PusherSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB26CB6614A8B49E1B684746 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample PusherSwift/Pods-Sample PusherSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2613C01335C4DD16180EFD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sample PusherSwift/Pods-Sample PusherSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PusherSwift/PusherSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PusherSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample PusherSwift/Pods-Sample PusherSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FBF7A761F394B1F00E51E0B /* Sources */ = {
@@ -261,6 +342,7 @@
 		};
 		8FBF7A8D1F394B2000E51E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CB83811A82D59EDBE7F6FF1 /* Pods-Sample PusherSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AJXGP38B7W;
@@ -274,6 +356,7 @@
 		};
 		8FBF7A8E1F394B2000E51E0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8DFE7086D86D16EE1CC280 /* Pods-Sample PusherSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AJXGP38B7W;
